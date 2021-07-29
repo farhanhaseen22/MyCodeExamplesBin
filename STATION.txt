@@ -1,0 +1,40 @@
+
+\(\d+\,\s\w+\s[A-Z]{1}[A-Z]{1}
+\(\d+\,\s\w+\s([^A-Z]{1}[^A-Z]{1})\w+
+
+
+kinda correct:
+\(\d+\,\s\w+\s\w+\s[^\d\s]*\d+
+
+correct:
+\(\d+\,\s\w+\s\w+[^\d\s]
+\(\d+\,\s\w+\s\w{3,}
+\(\d+\,\s\w+\s(?!\w{3,})
+
+
+
+[A-Z]{1}[A-Z]{1}
+Replace: , $&,
+
+(794, Kissee Mills MO 140 73),
+(824, Loma Mar CA 49 131),
+(603, Sandy Hook CT 72 148),
+(478, Tipton IN 34 98),
+(619, Arlington CO 75 93),
+(711, Turner AR 50 101),
+(839, Slidell LA 85 152),
+(411, Negreet LA 99 105),
+(588, Glencoe KY 46 136),
+(665, Chelsea IA 99 60),
+(342, Chignik Lagoon AK 103 153),
+(733, Pelahatchie MS 39 28),
+(441, Hanna City IL 51 137),
+(811, Dorrance KS 102 122),
+(698, Albany CA 50 80),
+(325, Monument KS 71 142),
+(414, Manchester MD 74 37),
+(113, Prescott IA 40 66),
+(971, Graettinger IA 95 150),
+(266, Cahone CO 116 127),
+(617, Sturgis MS 36 126),
+(495, Upperco MD 114 30)

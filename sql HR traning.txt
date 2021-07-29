@@ -1,0 +1,23 @@
+SELECT CITY FROM STATION 
+WHERE ID = ( SELECT ID/2 FROM STATION);
+
+SELECT DISTINCT CITY FROM STATION where mod(ID,2);
+
+SELECT DISTINCT COUNT(*)over()"Total City" FROM `products` 
+
+SELECT COUNT(*) FROM `products` 
+
+SELECT DISTINCT COUNT(`shop`)over()"Diff" FROM `products` GROUP BY `shop`
+
+SELECT DISTINCT (SELECT COUNT(*) FROM `products`)-(SELECT DISTINCT COUNT(`shop`)over()"Diff" FROM `products` GROUP BY `shop`)"Diff" FROM `products`
+
+SELECT DISTINCT CITY FROM STATION WHERE CITY like '[aeiou]%';
+
+
+==============================================================
+
+SELECT COUNT(`shop`),shop FROM `products` GROUP BY `shop`
+
+SELECT COUNT(*) over() FROM `products`;
+
+SELECT ROW_NUMBER() OVER() FROM `products`;
