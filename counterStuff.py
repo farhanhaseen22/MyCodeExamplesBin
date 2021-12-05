@@ -1,14 +1,15 @@
 from collections import Counter
 
 # Create a list 
-z = ['blue', 'red', 'blue', 'yellow', 'blue', 'red'] 
-col_count = Counter(z) 
-print(col_count) 
+# z = ['blue', 'red', 'blue', 'yellow', 'blue', 'red'] 
+# col_count = Counter(z) 
+# print(col_count) 
 
-col = ['blue','red','yellow','green']
+# col = ['blue','red','yellow','green']
 
-for color in col:
-    print (color, col_count[color])
+# for color in col:
+#     print (color, col_count[color])
+
 
 
 # # c = Counter({'a': 5, 'b': 3, 'c': 6})

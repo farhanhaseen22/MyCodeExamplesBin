@@ -1,0 +1,21 @@
+class Solution:
+    def myPow(self, x, n):
+        
+        if(n==0):
+            return 1;
+        elif(n>0):
+            if(n%2==0):
+                return myPow(self, x*x,(n/2));
+            else:
+                return x*myPow(self, x*x,(n-1)/2);
+        else:
+            return 1/(x*myPow(self, x,-n-1));
+        
+        # main = x;
+        # i=0;
+        # while(i<n):
+        #     main = main*x;
+        # return main;
+    
+        # return x ** n;
+        
