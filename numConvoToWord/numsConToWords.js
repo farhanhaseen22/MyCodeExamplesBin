@@ -61,6 +61,8 @@ function convrtToHundrds(num) {
 }
 
 function numsConToWords(text) {
+    // let text = "24585456123 ";
+    // There always needs to be a white-space at the end like above
     text = text + " ";
     let result = text.replace(/[0-9](?=([0-9]{3})+\D)/g, e => e + ",");
     
@@ -83,9 +85,6 @@ function numsConToWords(text) {
     
     return mainStr;
 }
-
-// there always need to have space at the end
-// let text = "24585456123 ";
 
 console.log(numsConToWords("0564585456123"));
 console.log(numsConToWords("564585456123"));
