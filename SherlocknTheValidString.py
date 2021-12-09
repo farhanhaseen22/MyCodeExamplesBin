@@ -4,6 +4,7 @@ letter_count = Counter(s)
 print(letter_count)
 
 occurenceCount={}
+
 for key,val in letter_count.items():
     if val in occurenceCount:
         occurenceCount[val]+=1
@@ -19,6 +20,7 @@ elif(len(occurenceCount)>2):
 # elif 1 in occurenceCount.values() and (occurenceCount[min(occurenceCount.keys())]==1 or (max(occurenceCount.keys()) - min(occurenceCount.keys())==1)):
 #         return "YES"
     
+
 #     return 'NO'
 else:
     for x in occurenceCount.values():

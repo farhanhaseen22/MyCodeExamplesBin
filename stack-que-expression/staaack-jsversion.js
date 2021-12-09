@@ -56,20 +56,29 @@ class myStack {
 let s1 = new myStack(2);
 s1.push(1);
 s1.push(2);
-s1.push(3);
-// console.log("stack.length :- ",s1.stack.length);
-s1.pop();
-s1.push(4);
-s1.show();
-console.log("=======show=========");
-s1.push(5);
-s1.pop();
-s1.push(6);
 s1.topElement();
-console.log("Top :- ",s1.top);
-// console.log("========topElement========");
-s1.show();
-console.log("=======show=========");
+console.log("========topElement========");
+s1.pop();
+s1.pop();
+s1.topElement();
+console.log("========topElement========");
+if(!s1.topElement()){
+    console.log("Works");
+}
+else{
+    s1.topElement();
+    console.log("========topElement========");
+}
+// s1.push(3);
+// s1.push(4);
+// s1.show();
+// console.log("=======show=========");
+// s1.push(5);
+// s1.pop();
+// s1.push(6);
+// // console.log("Top :- ",s1.top);
+// s1.show();
+// console.log("=======show=========");
 // s1.push(7);
 // s1.push(8);
 // s1.push(12);

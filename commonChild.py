@@ -48,4 +48,3 @@ if __name__ == '__main__':
     result = commonChild(s1, s2)
 
     print(str(result) + ' ')
-

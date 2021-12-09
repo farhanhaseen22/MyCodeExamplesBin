@@ -62,10 +62,10 @@ class myQueue{
             }
         }
         else{
-            for(let i=this.frnt; i<this.maxSize; i++){
+            for(let i=0; i<=this.rear; i++){
                 console.log(this.queue[i]);
             }
-            for(let i=0; i<=this.rear; i++){
+            for(let i=this.frnt; i<this.maxSize; i++){
                 console.log(this.queue[i]);
             }
         }
@@ -83,10 +83,10 @@ console.log("=======show=========");
 q1.enQue(5);
 q1.deQue();
 q1.enQue(6);
-q1.frontValue();
-console.log("========topElement========");
 q1.show();
 console.log("=======show=========");
-q1.enQue(7);
-q1.enQue(8);
-q1.show();
+// q1.frontValue();
+// console.log("========topElement========");
+// q1.enQue(7);
+// q1.enQue(8);
+// q1.show();

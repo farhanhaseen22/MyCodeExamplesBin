@@ -4,6 +4,7 @@
 (?!abc)	negative lookahead
 (?:abc)	non-capturing group
 
+
 a(?=t)
 
 a(?!t)

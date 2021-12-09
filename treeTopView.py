@@ -9,8 +9,7 @@ class newNode:
  
 # function should print the topView
 # of the binary tree
- 
- 
+
 def topview(root):
  
     if(root == None):
